@@ -57,26 +57,4 @@ RN05 - O público deve ser registrado individualmente para cada sessão.
 
 ---
 
-## Implementação
-
-O caso de uso implementado foi o registro de público da sessão.
-
-A implementação foi desenvolvida utilizando a arquitetura MVC com as camadas:
-- View
-- Controller
-- Service
-- Repository
-
-O banco de dados utilizado foi o SQLite.
-
-O sistema realiza:
-- busca da sessão;
-- validação da capacidade;
-- atualização do público registrado.
-
-Exemplo de validação implementada:
-
-```python
-if publico > sessao.capacidade:
-    return "O público não pode ultrapassar a capacidade."
 
